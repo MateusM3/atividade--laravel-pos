@@ -14,9 +14,9 @@ class CategoryController extends Controller
         return Category::latest()->get();
     }
 
-    public function store(Request $request, Category $category)
+    public function store(Request $request)
     {
-        $category::create(array(
+        Category::create(array(
             'name' => $request->name,
             'slug' => str_slug($request->name),
         ));
