@@ -1,11 +1,19 @@
-<p align="center"><img src="https://laravel.com/assets/img/components/logo-laravel.svg"></p>
+<h1>Atividade laravel </h1>
 
-## Atividade laravel
+> Usando Docker e DockerCompose
 
-##Instalação
-    - php artisan migrate
+> Copie o arquivo .env-example e cole como .env
 
-
-###Passport:
-    - php artisan passport:install
+> Execute os Seguintes comandos para realizar a instalação
+    ```- docker-compose up ```<br />
+    ``` - composer install ```<br />
+    ``` - docker-compose exec node npm install```<br />
+    ```- docker-compose exec node npm run dev```<br />
+    ```- docker-compose exec app php artisan key:generate```<br />
+    ```- docker-compose exec app php artisan migrate```<br />
+    ```- docker-compose exec app php artisan passport:install```<br />
+    
+>Endereços http
+    ```- aplicação http://localhost:8080   ``` <br />
+    ```  - phpmyadmin http://localhost:8081 ```   <br />
 
