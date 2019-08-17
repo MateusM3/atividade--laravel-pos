@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Api;
 
 use App\Model\Category;
-use Illuminate\Http\Request;
+use App\Http\Requests\CategoryRequest;
 use App\Http\Controllers\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -14,7 +14,7 @@ class CategoryController extends Controller
         return Category::latest()->get();
     }
 
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
         Category::create(array(
             'name' => $request->name,
@@ -29,7 +29,7 @@ class CategoryController extends Controller
         return $category;
     }
 
-    public function update(Request $request, Category $category)
+    public function update(CategoryRequest $request, Category $category)
     {
         $category->update(
             [

@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Resources\QuestionResource;
 use App\Model\Question;
-use Illuminate\Http\Request;
+use App\Http\Requests\CategoryRequest;
 use App\Http\Controllers\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -15,7 +15,7 @@ class QuestionController extends Controller
         return QuestionResource::collection(Question::latest()->get());
     }
 
-    public function store(Request $request)
+    public function store(CategoryRequest $request)
     {
         Question::create(array(
             'title' => $request->title,
@@ -33,7 +33,7 @@ class QuestionController extends Controller
         return new QuestionResource($question);
     }
 
-    public function update(Request $request, Question $question)
+    public function update(CategoryRequest $request, Question $question)
     {
         $question->update(array(
             'title' => $request->title,
