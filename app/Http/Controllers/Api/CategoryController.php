@@ -21,7 +21,7 @@ class CategoryController extends Controller
             'slug' => str_slug($request->name),
         ));
 
-        return response('created', Response::HTTP_CREATED);
+        return response('Criado', Response::HTTP_CREATED);
     }
 
     public function show(Category $category)
@@ -38,12 +38,12 @@ class CategoryController extends Controller
             ]
         );
 
-        return response('Updated', Response::HTTP_ACCEPTED);
+        return response('Atualizado', Response::HTTP_ACCEPTED);
     }
 
     public function destroy(Category $category)
     {
         $category->delete();
-        return redirect(null, Response::HTTP_NO_CONTENT);
+        return redirect('Deletado', Response::HTTP_NO_CONTENT);
     }
 }
