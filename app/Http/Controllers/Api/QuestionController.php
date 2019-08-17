@@ -4,7 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Resources\QuestionResource;
 use App\Model\Question;
-use App\Http\Requests\CategoryRequest;
+use App\Http\Requests\QuestionRequest;
 use App\Http\Controllers\Controller;
 use Symfony\Component\HttpFoundation\Response;
 
@@ -15,7 +15,7 @@ class QuestionController extends Controller
         return QuestionResource::collection(Question::latest()->get());
     }
 
-    public function store(CategoryRequest $request)
+    public function store(QuestionRequest $request)
     {
         Question::create(array(
             'title' => $request->title,
@@ -33,7 +33,7 @@ class QuestionController extends Controller
         return new QuestionResource($question);
     }
 
-    public function update(CategoryRequest $request, Question $question)
+    public function update(QuestionRequest $request, Question $question)
     {
         $question->update(array(
             'title' => $request->title,
@@ -49,7 +49,7 @@ class QuestionController extends Controller
     public function destroy(Question $question)
     {
         $question->delete();
-        return response('Deletado', Response::HTTP_NO_CONTENT);
+        return response(null, Response::HTTP_NO_CONTENT);
     }
 
 }

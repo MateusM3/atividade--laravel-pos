@@ -38,20 +38,14 @@ class CategoryRequest extends FormRequest
     public function rules()
     {
         return [
-            'title' => 'required',
-            'body' => 'required',
-            'category_id' => 'required',
-            'user_id' => 'required',
+            'name' => 'required'
         ];
     }
 
     public function messages()
     {
         return array(
-            'title.required' => 'O atributo título é obrigatório!',
-            'body.required' => 'O atributo corpo não pode ser vazio!',
-            'category_id.required' => 'Tem um valor invalido!',
-            'user_id.required' => 'Tem um valor invalido!',
+            'name.required' => 'O atributo nome é obrigatório!',
         );
     }
 

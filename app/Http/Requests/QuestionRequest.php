@@ -36,14 +36,20 @@ class QuestionRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required'
+            'title' => 'required',
+            'body' => 'required',
+            'category_id' => 'required|exists:categories,id',
+            'user_id' => 'required|exists:users,id',
         ];
     }
 
     public function messages()
     {
         return array(
-            'name.required' => 'O atributo nome é obrigatório!',
+            'title.required' => 'O atributo título é obrigatório!',
+            'body.required' => 'O atributo corpo não pode ser vazio!',
+            'category_id.required' => 'Tem um valor invalido!',
+            'user_id.required' => 'Tem um valor invalido!',
         );
     }
 }

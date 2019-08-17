@@ -1,0 +1,225 @@
+{
+	"variables": [],
+	"info": {
+		"name": "PosAtividadeLaravel",
+		"_postman_id": "45a221ab-42f6-9dac-ab71-1f1515000f0f",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Visualizando usuario autenticado",
+			"request": {
+				"url": "http://localhost:8080/api/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Criando Categoria",
+			"request": {
+				"url": "http://localhost:8080/api/category",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\" : \"Teste\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizando todas as Categorias",
+			"request": {
+				"url": "http://localhost:8080/api/category",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizando categoria por slug",
+			"request": {
+				"url": "http://localhost:8080/api/category/teste",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deletando categoria",
+			"request": {
+				"url": "http://localhost:8080/api/category/teste",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Criando Pergunta",
+			"request": {
+				"url": "http://localhost:8080/api/question",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\": \"Teste pergunta\",\n\t\"body\": \"Teste\",\n\t\"category_id\": \"1\",\n\t\"user_id\": \"1\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Listando todas as perguntas",
+			"request": {
+				"url": "http://localhost:8080/api/question",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Visualizar pergunta pelo caminho",
+			"request": {
+				"url": "http://localhost:8080/api/question/teste-pergunta",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deletando Perguntas",
+			"request": {
+				"url": "http://localhost:8080/api/question/teste-pergunta",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjJhYjI2YjkzY2QwMGYwNzZkMzgwN2VjOGQ2NmNiMGI1OWNhMmQ4ZDQ4MTVmMTA4ZjFkM2Q3ZWI4NjM3YzkxMmVlMzJiMjQzYzMzYzNjODJlIn0.eyJhdWQiOiIyIiwianRpIjoiMmFiMjZiOTNjZDAwZjA3NmQzODA3ZWM4ZDY2Y2IwYjU5Y2EyZDhkNDgxNWYxMDhmMWQzZDdlYjg2MzdjOTEyZWUzMmIyNDNjMzNjM2M4MmUiLCJpYXQiOjE1NjYwNDgyMzcsIm5iZiI6MTU2NjA0ODIzNywiZXhwIjoxNTk3NjcwNjM3LCJzdWIiOiIxIiwic2NvcGVzIjpbXX0.pRawV647EujjZKb-mbLMImYiX94G1d3hJsWmTkYlXPCKjzg59huKfX779_QIp3DeVBth4rbigDP45hZlK1WAAnHf2ClhjZbzTquA3JbUMcDc2P2qXD8XJRzaG-1ZcWfdX4Bz0X_xVXR09K_7cSwRKfOTtCWv2WyW1OKePUnS5aO8-OpQZfaycOUJG5yaOmyjaKvUR9fihylHWIYDr_Sj-JrT3mnFhBUmhHtYKQCZnow6zejCJ4w2NP0IoitreYHGLbrdEdqbPcgzPmOS6bvtrqahbUWwImFDgiL7rwchssgkRSMIKCDUnKFiYt5ZGexQw0bcE94a0lz1Zf0NkCWUsDR3nGLfTCZIPRQinzWYgihfTSPTBnyYjwtT-hr6xl54AHHVF-QgC9EGh_C5tRtRrl5ZMiFkUSjhptaX8Y1LzNVtWCOLyWn2F-WJH8i3a-d7oY-2XJe3x7QelgLA60JS1OqwIpCpSu0tNQ_-Rz-XT8rmjysWXStJgNZou-0d6vPr6AIr0JvfBuME50J4zaFzxn45cZLWJhHyB8ieVL0L5luolyv6K6RRFzAztFhwLfAMyDFG_0XEwRJOi3eV7wqntYTzhZZ4lpay2q1EuCl_yiF6ptV3NXRYREy-Q2_r8Lar9II6iatb26Y5GXJXMt_nFfjviOkLPx6ProKL3KhTfoM",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
