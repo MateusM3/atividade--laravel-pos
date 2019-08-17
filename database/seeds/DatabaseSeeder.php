@@ -3,6 +3,7 @@
 use Illuminate\Database\Seeder;
 use \App\User;
 use \App\Model\Category;
+use \App\Model\Question;
 
 class DatabaseSeeder extends Seeder
 {
@@ -15,6 +16,7 @@ class DatabaseSeeder extends Seeder
     {
         factory(User::class, 10)->create();
         factory(Category::class, 10)->create();
+        factory(Question::class, 10)->create();
         // $this->call(UsersTableSeeder::class);
     }
 }
